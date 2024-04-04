@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "460846536895",
+    "project_id": "health-app-reminder",
+    "storage_bucket": "health-app-reminder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460846536895:android:d88163cfbe9e4d37f68e0a",
+        "android_client_info": {
+          "package_name": "com.example.healthappreminder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460846536895-i51v8d1dr9ags7phlslmtoec9gfldn0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthappreminder",
+            "certificate_hash": "981b2c74df951e5c9bda55d9a3be3f4c1f3ad17a"
+          }
+        },
+        {
+          "client_id": "460846536895-jfmj8j7gl4n0up2ijete1fhge3iljhae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9R0_rRnb6VyAxyAgBeFsZNnYqOSEpUjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460846536895-jfmj8j7gl4n0up2ijete1fhge3iljhae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
