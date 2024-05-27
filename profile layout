@@ -1,0 +1,124 @@
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="109dp"
+                tools:layout_editor_absoluteY="51dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <EditText
+                android:id="@+id/profile_username"
+                android:layout_width="273dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                android:hint="username"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:background="#B6B0B0"
+
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="254dp" />
+
+            <EditText
+                android:id="@+id/profile_Age"
+                android:layout_width="273dp"
+                android:layout_height="41dp"
+                android:layout_margin="15dp"
+                android:background="#B6B0B0"
+                android:elevation="5dp"
+                android:hint="Age"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="20dp"
+
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="303dp" />
+
+            <EditText
+                android:id="@+id/profile_email"
+                android:layout_width="273dp"
+                android:layout_height="42dp"
+                android:layout_margin="9dp"
+                android:background="#B6B0B0"
+                android:elevation="5dp"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="272dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="#B6B0B0"
+                android:elevation="5dp"
+                android:hint="Name"
+                android:inputType="text"
+
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="191dp" />
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+
+            <ImageButton
+                android:id="@+id/deletebutton"
+                android:layout_width="27dp"
+                android:layout_height="22dp"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="629dp" />
+
+            <Button
+                android:id="@+id/editbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8BC34A"
+                android:backgroundTint="#8BC34A"
+                android:text="Edit Profile"
+                tools:layout_editor_absoluteX="128dp"
+                tools:layout_editor_absoluteY="467dp" />
+
+            <Button
+                android:id="@+id/logoutbutton"
+                android:layout_width="92dp"
+                android:layout_height="32dp"
+                android:background="#F1E8E8"
+                android:backgroundTint="#F6EBEB"
+                android:text="Log out"
+                android:textAlignment="textStart"
+                android:textColor="#322C2C"
+                android:textSize="10sp"
+                tools:layout_editor_absoluteX="145dp"
+                tools:layout_editor_absoluteY="523dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
