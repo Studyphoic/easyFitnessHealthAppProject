@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.`profile_main.xml`)
+        setContentView(R.layout.profile_main.xml)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -34,12 +34,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         editText3 = findViewById(R.id.profile_Age)
         editText4 = findViewById(R.id.profile_email)
         btn  = findViewById(R.id.editbutton)
-        btn.setOnClickListener(this)
+        btn.setOnClickListener {
+            var full_name = editText.text
+            var profile_username = editText2.text
+            var profile_age = editText3.text
+            var profile_email = editText4.text
+
 
         }
 
-    override fun onClick(v: View?) {
-        TODO("Not yet implemented")
-    }
+        }
+
 }
 }
