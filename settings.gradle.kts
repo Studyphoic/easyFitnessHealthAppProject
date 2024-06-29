@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Health App reminder"
+rootProject.name = "HARP"
 include(":app")
