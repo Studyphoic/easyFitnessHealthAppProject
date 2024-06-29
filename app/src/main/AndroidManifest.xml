@@ -10,8 +10,56 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HealthAppReminder"
+        android:theme="@style/Theme.HARP"
         tools:targetApi="31">
+        <activity
+            android:name=".ViewDetail_dn1"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDetail_Lnch2"
+            android:exported="false" />
+        <activity
+            android:name=".Viewdetail_Lnch1"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDetailbf1"
+            android:exported="false" />
+        <activity
+            android:name=".ViewDetailBf1"
+            android:exported="false" />
+        <activity
+            android:name=".viewdetailbf1"
+            android:exported="false" />
+        <activity
+            android:name=".VideoView_activity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScaleWeightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
