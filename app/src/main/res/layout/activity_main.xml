@@ -1,203 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:padding="32dp"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:padding="36dp">
 
 
     <TextView
-        android:id="@+id/tv_started_title"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_start_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:fontFamily="@font/leaguespartanbold"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="@string/started_title"
-        android:textAlignment="viewStart"
+        android:text="@string/start_title"
         android:textColor="@color/secondary_color"
-        android:textSize="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120sp"/>
 
     <TextView
-        android:id="@+id/tv_started_subtitle"
+        android:id="@+id/tv_start_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingStart="18dp"
+        android:text="@string/start_sub_title"
+        android:textSize="20sp"
+        android:layout_marginTop="180sp"
+        android:layout_marginEnd="170sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_start_sub_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingStart="19dp"
+        android:text="@string/start_sub_title2"
+        android:layout_marginEnd="57sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_start_sub_title" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/login_email"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start_sub_title2"
+        tools:layout_editor_absoluteX="36dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_password"
         android:layout_marginTop="15dp"
-        android:fontFamily="@font/leaguespartanbold"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="@string/started_subtitle"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:passwordToggleEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/til_email"
+        tools:layout_editor_absoluteX="36dp">
 
-    <TextView
-        android:id="@+id/tv_started_subtitle2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:fontFamily="@font/poppinslight"
-        android:paddingLeft="19dp"
-        android:paddingRight="16dp"
-        android:text="@string/started_subtitle2"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/login_google"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/google_icon3"/>
-
-        <TextView
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:layout_marginTop="15dp"
-            android:hint="Login with Google"
-            android:textColorHint="@color/white"
-            android:textSize="13dp"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:fontFamily="@font/roboto_medium"
-            android:layout_centerHorizontal="true"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal">
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/or_text"
-            android:background="@color/black"/>
-
-
-        <TextView
-            android:id="@+id/or_text"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:background="@color/white"
-            android:text="Or"
-            android:textSize="16sp"/>
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/or_text"
-            android:background="@color/black"/>
-    </RelativeLayout>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/username_round"
-        android:hint="Username"
-        android:textColorHint="#C0C0C0"
-        android:maxLines="1"
-        android:inputType="text"
-        android:textSize="16sp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@drawable/username_round"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp">
-
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background=""
-            android:hint="Password"
-            android:textColorHint="#C0C0C0"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:textSize="16sp"
-            android:inputType="textPassword"
-            android:maxLines="1"/>
-
-    </RelativeLayout>
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Login"
+        android:layout_height="50dp"
+        android:text="@string/btn_login"
         android:textAllCaps="false"
-        android:fontFamily="@font/roboto_medium"
-        android:background="@drawable/login_buton"/>
+        android:layout_marginTop="15dp"
+        style="@style/ButtonGrey"
+        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        tools:layout_editor_absoluteX="36dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="Forgot Password?"
-        android:textColor="@color/secondary_color"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="22dp"
-        android:textSize="12sp"
-        android:fontFamily="@font/roboto_black"/>
-
-    <View
+        android:id="@+id/tv_forgot_pw"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_marginTop="80dp"/>
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/leaguespartanbold"
+        android:text="@string/login_forgot_password"
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondary_color"
+        android:textSize="13sp"
+        android:paddingTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"/>
 
     <TextView
-        android:id="@+id/signUpView"
-        android:layout_width="wrap_content"
+        android:id="@+id/goto_signup_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:layout_marginTop="12dp"
-        android:layout_marginStart="150dp"
-        android:textColor="@color/secondary_color"
-        android:fontFamily="@font/roboto_black"/>
+        android:text="@string/login_havent_account"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingTop="250sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_forgot_pw"/>
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
