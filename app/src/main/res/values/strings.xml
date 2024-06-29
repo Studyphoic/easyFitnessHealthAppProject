@@ -1,6 +1,36 @@
 <resources>
-    <string name="app_name">Health App reminder</string>
-    <string name="started_title">Harce</string>
-    <string name="started_subtitle">Welcome to Harce!</string>
-    <string name="started_subtitle2">We will make sure to keep you stay healthy 👍</string>
+    <string name="app_name">HARP</string>
+    <string name="start_title">HARP</string>
+    <string name="start_sub_title">
+        <b>Welcome to HARP!</b>
+    </string>
+    <string name="start_sub_title2">We will make sure to keep you stay healthy 👍</string>
+    <string name="login_with_google">Login With Google</string>
+    <string name="login_email">Email/Username</string>
+    <string name="login_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_logout">Logout</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_havent_account">
+        Don\'t have an account?
+    <font color="#5762b3"><b>Sign Up</b></font>
+    </string>
+    <string name="signuptitle_create_account"><b>Create an account</b></string>
+    <string name="su_email">Email</string>
+    <string name="su_username">Username</string>
+    <string name="su_password">Password</string>
+    <string name="su_reenter_password">Re-enter Password</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="signup_have_account">
+        Already have an account?
+        <font color="#5762b3"><b>Sign In</b></font>
+    </string>
+    <string name="title_forgot_password">Forgot Password?</string>
+    <string name="fpw_email">Email</string>
+    <string name="fpw_send_email">Send</string>
+    <string name="tv_home_misson">My Workout Program (Coming soon)</string>
+    <string name="calculate_btn">Calculate</string>
+    <string name="data_normalWeight_bmi">• Height: 145 cm\n Weight: 39–52 kg\n\n• Height: 160 cm\n  Weight: 47–64 kg\n\n• Height: 175 cm\n  Weight: 56–76 kg\n\n •Height: 190 cm\n  Weight: 66–88 kg</string>
+    <string name="info_scwtext">These data we collected based on BMI. You can measure your training more effectively by collecting information based on these list. Happy training 💪</string>
+    <string name="info_sleeptext">Our system will notify you to go bed at 10:00 PM\nWith 6-8 hours sleep. You will awake at 04:00 to 06:00 AM.\nFor Example here is how 8 hours sleep look like.</string>
 </resources>
