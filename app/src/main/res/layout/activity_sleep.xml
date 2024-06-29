@@ -1,112 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SleepActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sleep_maincardview"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_home_background3"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="72sp"
+        android:layout_marginTop="18dp"
+         />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/sleep_back_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="320sp"
+        android:layout_marginTop="20sp"/>
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="match_parent"
-            android:layout_height="89dp"
-            android:scaleX="1.04"
-            android:scaleY="1.04"
-            app:srcCompat="@drawable/Topbar2" />
+    <TextView
+        android:id="@+id/tv_info_bedtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="Your max bedtime is 10:00 PM"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_maincardview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100sp"/>
 
-        <TextView
-            android:id="@+id/bedtimeMessage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Your max bedtime is [bedtime]"
-            android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
+    <TextView
+        android:id="@+id/tv_set_sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/info_sleeptext"
+        android:textColor="#000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_bedtime"
+        android:layout_marginTop="60sp"
+        tools:layout_editor_absoluteX="30dp" />
 
-            <TextView
-                android:id="@+id/setSleepTimeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Set Sleep Time"
-                android:textSize="18sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bed_grey"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set_sleep_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="320sp"
+        android:layout_marginTop="38sp"
+        tools:layout_editor_absoluteX="34dp" />
 
-            <EditText
-                android:id="@+id/sleepTimeInput"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="Enter hours"
-                android:inputType="number"
-                android:layout_marginStart="8dp"
-                android:padding="8dp"
-                android:background="@android:drawable/edit_text" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/tv_example_bedtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="10:00 PM"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="130sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set_sleep_time"
+        tools:layout_editor_absoluteX="112dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp"
-            android:paddingStart="40dp"
-            android:paddingEnd="16dp">
+    <ImageView
+        android:id="@+id/img_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120sp"
+        android:layout_marginEnd="320sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_set_sleep_time"
+        tools:layout_editor_absoluteX="37dp" />
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                app:srcCompat="@drawable/sleep" />
+    <TextView
+        android:id="@+id/tv_example_wakeup_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="06:00 AM"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_example_bedtime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="130sp"
+        android:layout_marginTop="45sp"
+        tools:layout_editor_absoluteX="112dp" />
 
-            <TextView
-                android:id="@+id/sleepTimeText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Time to Sleep: --:--"
-                android:textSize="16sp" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp"
-            android:paddingStart="40dp"
-            android:paddingEnd="16dp">
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0"
-                app:srcCompat="@drawable/baseline_access_alarm_24" />
-
-            <TextView
-                android:id="@+id/wakeUpTimeText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Time to Wake Up: --:--"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <Switch
-            android:id="@+id/alarmToggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Set Alarm"
-            android:layout_marginTop="16dp" />
-    </LinearLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
