@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScaleWeightActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scaleweight_maincardview"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_home_background2"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="72sp"
+        android:layout_marginTop="18dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scaleweight_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="320sp"
+        android:layout_marginTop="20sp" />
+
+    <TextView
+        android:id="@+id/tv_guide_scw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/leaguespartanbold"
+        android:text="Guide for Ideal Body Weight"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="130sp"
+        app:layout_constraintTop_toBottomOf="@+id/scaleweight_maincardview"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="130sp"
+        android:layout_marginTop="50sp"
+        android:text="@string/data_normalWeight_bmi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guide_scw"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <ImageView
+        android:id="@+id/imgview_yoga"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img_forscw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60sp"
+        android:layout_marginStart="170sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guide_scw"
+        tools:layout_editor_absoluteX="195dp" />
+
+    <TextView
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/info_scwtext"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50sp"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/imgview_yoga"
+        tools:layout_editor_absoluteX="26dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
