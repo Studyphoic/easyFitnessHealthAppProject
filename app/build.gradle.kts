@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.healthappreminder"
+    namespace = "com.example.harp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.healthappreminder"
+        applicationId = "com.example.harp"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -47,4 +50,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation ("io.reactivex.rxjava2:rxjava:2.2.19")
+    implementation ("com.jakewharton.rxbinding2:rxbinding:2.0.0")
+    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+
 }
