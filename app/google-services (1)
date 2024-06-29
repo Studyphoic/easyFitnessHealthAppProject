@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231651226966",
+    "project_id": "harp-a81e2",
+    "storage_bucket": "harp-a81e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231651226966:android:92ccf16bfbbb04338b12f7",
+        "android_client_info": {
+          "package_name": "com.example.harp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTu98ijYt6KDqUoOWjAYeiCcqqhVSGoiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
