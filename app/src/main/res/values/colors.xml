@@ -8,4 +8,5 @@
     <color name="primary_color">#71FFD0</color>
     <color name="secondary_color">#5762b3</color>
     <color name="google_blue">#4C8BF5</color>
+    <color name="grey_default">#999c9a</color>
 </resources>
